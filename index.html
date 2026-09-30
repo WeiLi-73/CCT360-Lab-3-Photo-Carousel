@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Behind the Spotlight | A Fashion Photo Story</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main class="page">
+
+    <header class="hero">
+      <p class="eyebrow">PARIS · DIOR · AUTUMN WINTER 2026–2027</p>
+
+      <h1>Behind the <em>Spotlight</em></h1>
+  
+    </header>
+
+    <section class="story-picker" aria-labelledby="choose-title">
+      <h2 id="choose-title">Choose your perspective</h2>
+
+      <p class="instructions">
+        Choose a story, then use Previous and Next to explore its
+        beginning, middle, and end. Switch stories to see the same
+        photographs in a different order.
+      </p>
+
+      <div class="story-buttons">
+        <button
+          id="story-one"
+          type="button"
+          class="story-button active"
+          aria-pressed="true"
+        >
+          <span class="button-number">01</span>
+          <span>From Preparation to Silence</span>
+        </button>
+
+        <button
+          id="story-two"
+          type="button"
+          class="story-button"
+          aria-pressed="false"
+        >
+          <span class="button-number">02</span>
+          <span>Behind the Spectacle</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="carousel" aria-labelledby="story-title">
+
+      <div class="story-heading">
+        <p id="story-label" class="eyebrow">STORY 01</p>
+
+        <h2 id="story-title">From Preparation to Silence</h2>
+
+        <p id="story-description">
+          Preparation becomes performance, before the runway returns
+          to stillness.
+        </p>
+      </div>
+
+      <figure class="photo-frame">
+        <img
+          id="story-image"
+          src="images/backstage.avif"
+          alt="A model in a white outfit stands backstage beside staff and racks of shoes."
+        >
+
+        <figcaption class="photo-caption">
+          <span id="image-credit">Image A · Source: Dior</span>
+
+          <a
+            id="image-source"
+            href="https://media.christiandior.com/cdn-cgi/image/width=1280,format=auto,quality=80/pm_11872_1331_1331145-ymhm3e97eb-whr.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Original image
+          </a>
+        </figcaption>
+      </figure>
+
+      <div class="slide-text" aria-live="polite" aria-atomic="true">
+        <p id="chapter" class="eyebrow">BEGINNING · 1 / 3</p>
+        <h3 id="slide-title">Before the entrance</h3>
+        <p id="slide-caption">
+          Away from the audience, the look is prepared.
+          The performance begins before anyone steps onto the runway.
+        </p>
+      </div>
+
+      <nav class="carousel-controls" aria-label="Photo navigation">
+        <button id="previous" type="button" disabled>
+          Previous
+        </button>
+
+        <span id="slide-counter">1 / 3</span>
+
+        <button id="next" type="button">
+          Next
+        </button>
+      </nav>
+
+      <p id="end-message" class="end-message" hidden>
+        You have reached the end. Choose the other story to discover
+        a different interpretation.
+      </p>
+
+    </section>
+
+    <section class="interpretation" aria-labelledby="interpretation-title">
+      <p class="eyebrow">THE POWER OF SEQUENCING</p>
+
+      <h2 id="interpretation-title">Same images, different meaning.</h2>
+
+      <p>
+        In the first sequence, backstage preparation leads to a public
+        performance, followed by an image of an unoccupied runway.
+        That final image suggests an ending.
+      </p>
+
+      <p>
+        In the second sequence, the runway introduces the setting,
+        the model brings it to life, and the backstage photograph
+        reveals the work behind the spectacle.
+      </p>
+
+
+    </section>
+
+    <footer class="references" aria-labelledby="references-title">
+      <h2 id="references-title">References / Image Sources</h2>
+
+      <p>
+        Dior. <cite>Autumn Winter 2026–2027 Show.</cite>
+      </p>
+
+      <ol>
+        <li>
+          Image A: Backstage preparation. Source: Dior.
+          <a
+            href="https://media.christiandior.com/cdn-cgi/image/width=1280,format=auto,quality=80/pm_11872_1331_1331145-ymhm3e97eb-whr.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Original image
+          </a>
+        </li>
+
+        <li>
+          Image B: Runway look. Source: Dior.
+          <a
+            href="https://media.christiandior.com/cdn-cgi/image/width=870,format=auto,quality=80/pm_11872_1330_1330590-x3e28ibd1w-whr.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Original image
+          </a>
+        </li>
+
+        <li>
+          Image C: Show venue. Source: Dior.
+          <a
+            href="https://media.christiandior.com/cdn-cgi/image/width=2560,format=auto,quality=80/pm_11872_1330_1330905-jwlvg3do7w-whr.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Original image
+          </a>
+        </li>
+      </ol>
+
+      <p>
+        Collection page:
+        <a
+          href="https://www.dior.com/en_us/fashion/womens-fashion/ready-to-wear-shows/autumn-winter-2026-2027-show"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Dior official show page
+        </a>
+      </p>
+
+      <p>Accessed: September 30, 2026.</p>
+    </footer>
+
+  </main>
+</body>
+</html>
