@@ -28,33 +28,41 @@ const stories = [
   {
     title: "From Preparation to Silence",
     description:
-      "Preparation becomes performance, before the runway returns to stillness.",
+      "A story of preparation, public attention, and the quiet space that remains.",
     order: [0, 1, 2],
+
     titles: [
-      "Before the entrance",
-      "Into the spotlight",
-      "What remains"
+      "Before anyone sees",
+      "A moment of visibility",
+      "After the image fades"
     ],
+
     captions: [
-      "Away from the audience, the look is prepared. The performance begins before anyone steps onto the runway.",
-      "The private work becomes a public image. Clothing, movement, and setting come together in one moment.",
-      "Without a model on the runway, the space feels still. Placed at the end, this photograph suggests the silence after a performance."
+      "A model stands among shoe racks and working hands. Here, the runway exists only as a destination beyond the photograph. Clothes are adjusted, details are checked, and a public image takes shape in a private space. The audience has not seen it yet, but the work of being seen has already begun.",
+
+      "On the white runway, preparation becomes performance. The green framework directs our gaze toward the moving figure, while the clothes catch the daylight. What appeared backstage as separate tasks now reads as one composed image. For this brief moment, the finished look occupies the centre of attention, and the work behind it slips from view.",
+
+      "The figure disappears from our sequence, but the runway remains. Water reflects the framework, and the white path continues toward the distance. Nothing in the space explains how much preparation brought the performance into being. After the intensity of being seen, this final image offers stillness: the stage outlasts the moment that gave it life."
     ]
   },
   {
     title: "Behind the Spectacle",
     description:
-      "A stage becomes a spectacle, before we discover the work behind it.",
+      "A story that moves from an inviting stage to the work hidden behind its polished image.",
     order: [2, 1, 0],
+
     titles: [
-      "A stage of possibility",
-      "The image we see",
-      "Beyond the public view"
+      "An invitation to look",
+      "The finished illusion",
+      "Where the image begins"
     ],
+
     captions: [
-      "The runway waits without a performer. Placed at the beginning, the empty space suggests anticipation.",
-      "A model brings the setting to life. For a moment, the finished image holds our attention.",
-      "The final photograph takes us backstage. Staff, preparation, and practical details reveal the work behind the polished performance."
+      "A white path stretches across the water, framed by green lines and reflected light. With no performer in view, the setting invites us to imagine an arrival. It appears calm, complete, and ready. Beginning here makes the runway a promise: something is about to enter this carefully arranged world and give it a centre.",
+
+      "The promise takes a visible form. A model occupies the path, and clothing transforms the architectural setting into a fashion image. Our attention settles on the finished appearance. The frame offers movement and elegance, but little evidence of preparation. At this point in the story, the spectacle seems to contain everything we need to see.",
+
+      "Then the sequence takes us behind the public image. Shoe racks, staff, and practical adjustments replace the clean lines of the runway. What seemed effortless now belongs to a larger process. Ending backstage changes the photograph before it: we return to that polished appearance knowing that its apparent simplicity depends on work beyond the audience's view."
     ]
   }
 ];
@@ -158,6 +166,14 @@ previousButton.addEventListener("click", function () {
 
 nextButton.addEventListener("click", function () {
   moveSlide(1);
+});
+
+// Switch to the other story when the button is clicked.
+const switchStoryButton = document.querySelector("#switch-story");
+
+switchStoryButton.addEventListener("click", function () {
+  const otherStory = currentStory === 0 ? 1 : 0;
+  selectStory(otherStory);
 });
 
 // Display the first story when the page loads.
